@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUs</title>
+    <link rel="stylesheet" href="./resources/styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="./resources/images/logos/circle.svg" alt="Circle logo">
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Projects</a>
+                </li>
+                <li>
+                    <a href="">Services</a>
+                </li>
+            </ul>
+            <button id="contact" = >Contact Us</button>
+        </nav>
+    </header>
+    <section>
+    <h1>Contact Us</h1>
+    <div>
+        <form id="nameF">
+            <label for="name">Full name*</label><br/>
+            <input
+            type="text"
+            name="name"
+            placeholder="Enter your full name"/>
+        </form>
+    </div>
+    <div>
+        <ul id="contacFormulario">
+            <li><form>
+                <label for="email">Email</label><br/>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email">
+            </form></li>
+            <li><form>
+                <label for="phone">Phone</label><br />
+                <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                      placeholder="Enter your phone"
+                    />
+            </form></li>
+        </ul>
+    </div>
+    <br>
+    <div class="textAreaBox">
+        <label for="textBox">Message*</label><br>
+        <textarea placeholder="Write your message hear..."
+        rows="20" cols="100"></textarea>
+
+    </div>
+    <div>
+         <input type="submit" value="Submit" />
+         <!--hay que buscar como hacer el vínculo-->
+    </div>
+    </section>
+    <footer>
+        <img src="./resources/images/logos/circle.svg" alt="Circle logo">
+        <p>2972 Westheimer Rd. Santa Ana,
+            Illinois 85486
+        </p>
+    </footer>
+</body>
+</html>
+<!--a página “Contáctanos” debe incluir un formulario para que los visitantes del sitio web puedan enviar una solicitud de contacto. El formulario debe incluir campos para recolectar información como el nombre, el correo electrónico y el mensaje del usuario. También se debe incluir un botón de envío para enviar la solicitud al punto final especificado en la URL. “https://jsonplaceholder.typicode.com/”.
+Los resultados de este formulario se deben ver registrados en consola una vez enviados al punto final especificado en la URL con un codigo de estado 201 :cara_ligeramente_sonriente:-->
