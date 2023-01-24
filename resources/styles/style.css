@@ -13,8 +13,7 @@
 body {
   font-family: "Roboto", sans-serif;
   margin-left: 10%;
-
-
+  background-color: #f2f4fc;
 }
 
 
@@ -34,14 +33,41 @@ body {
 /* ------------------------------ Navbar ------------------------------ */
 
 /* Your CSS code goes here */
+#navegador{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+#contact {
+  background-color: rgb(7, 42, 200);
+  color:white;
+  border-width: 0px;
+  height: 40px;
+  width: 100px;
+
+}
+
 #logo{
   width: 5%;
-  float: ;
 
 }
 #menu{
   display: flex;
   list-style: none;
+}
+
+#menu li{
+  margin: 0 8px;
+}
+
+#menu li a{
+  text-decoration: none;
+  color: #6b708d;
+  font-size: 25px;
 }
 
 /* ------------------------------ Header ------------------------------ */
