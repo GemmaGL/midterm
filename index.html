@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm</title>
-    <style src="./style.css"></style>
+    <link rel="stylesheet" href="./resources/styles/style.css"></link>
 </head>
 <body>
     <header>
-        <nav>
-            <img src="./resources/images/logos/circle.svg" alt="Circle logo">
-            <ul>
+        <nav id="navegador">
+            <img id="logo" src="./resources/images/logos/circle.svg" alt="Circle logo">
+            <ul id="menu">
                 <li>
                     <a href="">Home</a>
                 </li>
@@ -50,19 +50,19 @@
     <section id="Projects">
         <h2>Recent Projects</h2>
         <div class="row">
-            <div class="column">
+            <div class="column1">
                 <img src="./resources/images/projects-section/1.jpg" alt="Project_Simplify">
                 <h3>Simplify</h3>
                 <p>UI Design & App Development</p>
                 <a href="./project_simplify.html">Learn More</a>
             </div>
-            <div class="column">
+            <div class="column1">
                 <img src="./resources/images/projects-section/1.jpg" alt="Project_Dashcoin">
                 <h3>Dashcoin</h3>
                 <p>Web Development</p>
                 <a href="./project_dashcoin.html">Learn More</a>
             </div>
-            <div class="column">
+            <div class="column1">
                 <img src="./resources/images/projects-section/1.jpg" alt="Project_Vectorify">
                 <h3>Vectorify</h3>
                 <p>User Experience Design</p>
@@ -72,28 +72,42 @@
     </section>
     <section id="Services">
         <h2>Our Services</h2>
-        </div>
         <div class="row">
             <div class="column">
+                <div>
                 <img src="./resources/images/services-section/icons/1.svg" alt="Service_UI_Design">
+                </div>
+                <br>
                 <h3>User Interface Design</h3>
+                <br>
                 <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                <br>
                 <h4>Learn More
                     <a href=""></a>
                 </h4>
             </div>
             <div class="column">
+                <div>
                 <img src="./resources/images/services-section/icons/2.svg" alt="Service_UX_Design">
+                </div>
+                <br>
                 <h3>User Experience Design</h3>
+                <br>
                 <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                <br>
                 <h4>Learn More
                     <a href=""></a>
                 </h4>
             </div>
             <div class="column">
+                <div>
                 <img src="./resources/images/services-section/icons/3.svg" alt="Service_App_Development">
+                </div>
+                <br>
                 <h3>Application Development</h3>
+                <br>
                 <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                <br>
                 <h4>Learn More
                     <a href=""></a>
                 </h4>
@@ -102,15 +116,37 @@
     </section>
     <section id="questions">
         <h2>Do you have any questions?</h2>
+        <br>
         <p>Let us help you!</p>
+        <br>
+        <input id="emailBox"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email">
         <form action=""></form>
         <button>Suscribe</button>
     </section>
     <footer>
+        <div id="address">
         <img src="./resources/images/logos/circle.svg" alt="Circle logo">
-        <p>2972 Westheimer Rd. Santa Ana,
+        <br>
+        <p>2972 Westheimer Rd. Santa Ana,<br>
             Illinois 85486
         </p>
+        </div>
+        <table>
+            <tr>
+                <td>Team</td>
+                <td>Services</td>
+                <td>About Us</td>
+            </tr>
+            <tr>
+                <td>Press</td>
+                <td>Projects</td>
+                <td>Privacy Policy</td>
+            </tr>
+        </table>
     </footer>
 </body>   
 </html>
