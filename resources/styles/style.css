@@ -16,11 +16,15 @@ body {
   background-color: #f2f4fc;
 }
 
-h1{
+h1 {
   font-size: 340%;
-  color:rgb(41, 46, 71);
+  color: rgb(41, 46, 71);
+  letter-spacing: 3px;
 }
 
+h2 {
+  color: #6b708d;
+}
 
 
 /* ------------------------------------------------------------------------ */
@@ -38,7 +42,7 @@ h1{
 /* ------------------------------ Navbar ------------------------------ */
 
 /* Your CSS code goes here */
-#navegador{
+#navegador {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -49,51 +53,97 @@ h1{
 
 #contact {
   background-color: rgb(7, 42, 200);
-  color:white;
+  color: white;
   border-width: 0px;
   height: 50px;
   width: 140px;
   margin-right: 7%;
-  font-size:105%;
-
+  font-size: 105%;
 }
 
-#logo{
+#logo {
   width: 5%;
-
 }
-#menu{
+#menu {
   display: flex;
   list-style: none;
 }
 
-#menu li{
+#menu li {
   margin: 0 10px;
   margin-left: 10px;
   padding-left: 10%;
 }
 
-#menu li a{
+#menu li a {
   text-decoration: none;
   color: #6b708d;
   font-size: 18px;
   font-weight: 500;
 }
 
-#menu li a:visited{
+#menu li a:visited {
   color: dodgerblue;
 }
-#menu li a:hover{
+#menu li a:hover {
   color: indigo;
   cursor: pointer;
 }
-#contact:hover{
-    background-color: #292a2b;
-    cursor: pointer;
+#contact:hover {
+  background-color: #292a2b;
+  cursor: pointer;
 }
 /* ------------------------------ Header ------------------------------ */
 
 /* Your CSS code goes here */
+
+.row1 {
+  margin-top: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column0 {
+  width: 50vw;
+  padding-top: 10%;
+}
+
+.column0 p {
+  color: #6b708d;
+  font-size: 125%;
+  text-align: initial;
+  margin-top: 5%;
+  line-height: 150%;
+}
+
+.column h4 {
+  font-weight: 50;
+
+}
+.column01 {
+  position: relative;
+  background-image: url(../images/hero-section/hero-image.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 400px;
+  width: 50vw;
+  height: 600px;
+}
+
+#thumb-img {
+  position: absolute;
+    width: 289px;
+    top: 316px;
+    right: -51px;
+}
+
+#card-img {
+  position: absolute;
+  width: 289px;
+  top: 69px;
+  right: 219px;
+}
+
 
 /* ------------------------------ Partners ------------------------------ */
 
@@ -110,64 +160,62 @@ h1{
 /* ------------------------------ Services ------------------------------ */
 
 /* Your CSS code goes here */
-.row{
+.row {
   display: flex;
   flex-direction: row;
 }
-.column{
+.column {
   display: flex;
   background-color: white;
   flex-direction: column;
   width: 35%;
   height: 40%;
   margin: 10%;
-
-
 }
 
-.column img{
+.column img {
   width: 50px;
-  float:left;
+  float: left;
 }
 
-.column h4:hover{
+.column h4:hover {
   cursor: pointer;
 }
-.column h4{
-  color:blue;
+.column h4 {
+  color: blue;
 }
 
-.column div{
+.column div {
   background-color: aquamarine;
   border-radius: 100px;
   width: 80px;
   height: 80px;
-  
 }
 
 /* ------------------------------ Questions form ------------------------------ */
 
 /* Your CSS code goes here */
 
-#questions{
-  background-color: rgb(255, 198,0);
+#questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 198, 0);
   height: 500px;
-  width: 95%;
+  width: 100%;
   margin-left: -100px;
   margin-bottom: 100px;
   padding-top: 100px;
 }
 
-#questions h2,p{
+#questions h2,
+p {
   text-align: center;
-
 }
 
-#emailBox{
+#emailBox {
   width: 350px;
   height: 90px;
-  
-
 }
 /* ------------------------------ Footer ------------------------------ */
 
@@ -177,22 +225,25 @@ h1{
   float: left;
   margin-top: 20px;
   color: dimgray;
-  
+  text-align: left;
 }
 
-#address img{
+#address p{
+  text-align: initial;
+}
+
+#address img {
   width: 80px;
   margin-bottom: 10px;
 }
-table{
-  float:right;
-  color:blue;
+table {
+  float: right;
+  color: blue;
   margin-right: 100px;
   margin-bottom: 100px;
-  
 }
 
-td{
+td {
   padding: 20px;
   text-align: center;
 }
@@ -204,7 +255,43 @@ td{
 /* ------------------------------ Project main ------------------------------ */
 
 /* Your CSS code goes here */
+.tituloproject {
+  margin-top: 8%;
+}
+.infoproject {
+  margin-top: 2%;
+  margin-bottom: 6%;
+  margin-right: 7%;
+  display: flex;
+  justify-content: space-between;
+}
 
+.infoproject p {
+  font-size: 120%;
+}
+
+.projectinfo p {
+  text-align: left;
+  line-height: 150%;
+  font-size: 125%;
+  color: rgb(41, 46, 71);
+  margin-right: 7%;
+  margin-top: 7%;
+  margin-bottom: 10%;
+}
+
+/* .imagecontainer img{
+  width:80;
+} */
+.imagecontainer {
+  height: 450px;
+  background-image: url(../images/projects-section/1.jpg);
+  width: 1100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 1px 1px 25px rgb(171, 66, 151);
+}
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ CONTACT-US html ------------------------------ */
 /* ----------------------------------------------------------------------------- */
@@ -213,56 +300,57 @@ td{
 
 /* Your CSS code goes here */
 
-#formulario{
+#formulario {
   margin-top: 15%;
 }
-#formularioint{
+#formularioint {
   margin-top: 7%;
   margin-bottom: 5%;
   width: 92%;
   display: flex;
   flex-direction: column;
-  color:#6b708d;
+  color: #6b708d;
   font-size: 120%;
   gap: 10px;
-
 }
-#formulariofilas{
-  display:flex;
+#formulariofilas {
+  display: flex;
   justify-content: space-between;
 }
-#formulariofilas label{
-  display:flex;
+#formulariofilas label {
+  display: flex;
   flex-direction: column;
   width: 49%;
 }
-input{
+input {
   border: none;
-  background-color: rgb(228, 230,240);
+  background-color: rgb(228, 230, 240);
   height: 60px;
   padding-left: 2%;
   font-size: 80%;
 }
 
-#comentarios{
-  border:none;
-  background-color: rgb(228, 230,240);
-
+#comentarios {
+  border: none;
+  background-color: rgb(228, 230, 240);
 }
 
-#comentarios :placeholder{
+#comentarios :placeholder {
   font-family: "roboto";
   padding-left: 2%;
   padding-top: 2%;
-
 }
-#submitbut{
+#submitbut {
   background-color: #072ac8;
   color: white;
   font-size: 80%;
   margin-bottom: 10%;
 }
-
+textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 130%;
+  padding: 2%;
+}
 
 /* ----------------------------------------------------------------------------- */
 /* ------------------------------ About html ------------------------------ */

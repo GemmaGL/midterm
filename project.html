@@ -10,31 +10,31 @@
 <body>
     <header>
         <nav id="navegador">
-            <img src="./resources/images/logos/circle.svg" alt="Circle logo">
-            <ul>
+            <img id="logo" src="./resources/images/logos/circle.svg" alt="Circle logo">
+            <ul id="menu">
                 <li>
-                    <a href="">Home</a>
+                    <a href="./index.html">Home</a>
                 </li>
                 <li>
-                    <a href="">Projects</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="">Services</a>
+                    <a href="#services">Services</a>
                 </li>
             </ul>
-            <button id="contact" = >Contact Us</button>
+            <button id="contact">Contact Us</button>
         </nav>
     </header>
-    <h1>Simplify</h1>
-    <div class="infoProject">
+    <h1 class="tituloproject">Simplify</h1>
+    <div class="infoproject">
         <!--esto son cajas flex. tengo que mirar los apuntes para ver como hacerlo-->
-        <h3>Simplify</h3>
+        <h2>UI Design & App Development</h2>
         <p>Completed on 2/2/22</p>
     </div>
-    <div>
-        <img src="./resources/images/projects-section/1.jpg" alt="image abstract1">
+    <div class="imagecontainer">
+      <!-- <img src="./resources/images/projects-section/1.jpg" alt="image abstract1">-->
     </div>
-    <div>
+    <div class="projectinfo">
         <p>Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue lacus.
 
         Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce et sem ac velit placerat ultrices in id dolor. Sed eget auctor metus. Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et pellentesque nisl, vitae tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi tincidunt, sit amet tincidunt urna convallis. Nam et sagittis felis. Pellentesque placerat orci sodales nisi convallis ultrices. Nunc posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin vehicula sit amet vel mi.</p>
@@ -69,6 +69,27 @@
     </div>
 
     <!--Se repite la sección DO YOU HAVE QUESTIONS-->
-    <!--Se repite la sección Footer-->
+
+    <footer>
+        <div id="address">
+        <img src="./resources/images/logos/circle.svg" alt="Circle logo">
+        <br>
+        <p>2972 Westheimer Rd. Santa Ana,<br>
+            Illinois 85486
+        </p>
+        </div>
+        <table>
+            <tr>
+                <td>Team</td>
+                <td>Services</td>
+                <td>About Us</td>
+            </tr>
+            <tr>
+                <td>Press</td>
+                <td>Projects</td>
+                <td>Privacy Policy</td>
+            </tr>
+        </table>
+    </footer>
 </body>
 </html>
