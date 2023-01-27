@@ -1,95 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project1</title>
-    <link rel="stylesheet" href="./resources/styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./resources/styles/style.css" />
+  </head>
+  <body>
     <header>
-        <nav id="navegador">
-            <img id="logo" src="./resources/images/logos/circle.svg" alt="Circle logo">
-            <ul id="menu">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#services">Services</a>
-                </li>
-            </ul>
-            <button id="contact">Contact Us</button>
-        </nav>
+      <nav id="navegador">
+        <img
+          id="logo"
+          src="./resources/images/logos/circle.svg"
+          alt="Circle logo"
+        />
+        <ul id="menu">
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+        </ul>
+        <a href="./contact-us.html">
+          <button id="contact">Contact Us</button>
+        </a>
+      </nav>
     </header>
-    <h1 class="tituloproject">Simplify</h1>
-    <div class="infoproject">
+    <div class="ficha">
+      <h1 class="tituloproject">Simplify</h1>
+      <div class="infoproject">
         <!--esto son cajas flex. tengo que mirar los apuntes para ver como hacerlo-->
-        <h2>UI Design & App Development</h2>
-        <p>Completed on 2/2/22</p>
-    </div>
-    <div class="imagecontainer">
-      <!-- <img src="./resources/images/projects-section/1.jpg" alt="image abstract1">-->
-    </div>
-    <div class="projectinfo">
-        <p>Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et vehicula sem. Pellentesque bibendum massa non nisl posuere cursus. Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut arcu quis, pretium congue lacus.
+        <div class="tipo-tarea">UI Design & App Development</div>
+        <div class="tipo-tarea-completed">Completed on 2/2/22</div>
+      </div>
 
-        Aliquam blandit varius metus, in mattis orci convallis sit amet. Fusce et sem ac velit placerat ultrices in id dolor. Sed eget auctor metus. Sed suscipit fringilla lectus, a maximus justo bibendum a. Donec et pellentesque nisl, vitae tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi tincidunt, sit amet tincidunt urna convallis. Nam et sagittis felis. Pellentesque placerat orci sodales nisi convallis ultrices. Nunc posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis rutrum. Vestibulum dignissim pellentesque eros in placerat. Etiam at nisi quis quam sollicitudin vehicula sit amet vel mi.</p>
+      <img
+        class="foto-ficha"
+        src="./resources/images/projects-section/1.jpg"
+        alt="image abstract1"
+      />
+
+      <div class="projectinfo">
+        <p>
+          Simplify is lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Sed feugiat faucibus sem, id vulputate justo ornare non. Nullam et
+          vehicula sem. Pellentesque bibendum massa non nisl posuere cursus.
+          Aliquam ac eros pretium neque consequat facilisis. Ut sit amet justo
+          varius ex ultrices fringilla. Sed vel turpis fringilla ante gravida
+          vestibulum. Etiam a sollicitudin leo. Nunc metus lectus, lacinia ut
+          arcu quis, pretium congue lacus. Aliquam blandit varius metus, in
+          mattis orci convallis sit amet. Fusce et sem ac velit placerat
+          ultrices in id dolor. Sed eget auctor metus. Sed suscipit fringilla
+          lectus, a maximus justo bibendum a. Donec et pellentesque nisl, vitae
+          tempus lorem. Sed efficitur cursus rhoncus. Duis placerat nisi quis mi
+          tincidunt, sit amet tincidunt urna convallis. Nam et sagittis felis.
+          Pellentesque placerat orci sodales nisi convallis ultrices. Nunc
+          posuere neque eu mi imperdiet ullamcorper. Praesent tempor convallis
+          rutrum. Vestibulum dignissim pellentesque eros in placerat. Etiam at
+          nisi quis quam sollicitudin vehicula sit amet vel mi.
+        </p>
+      </div>
     </div>
-    <div>
-        <h2>Other  Projects</h2>
-    </div>
-    <div class="mainBoxContainer">
-        <div class="smallBoxContainer">
+    <section class="other-projects">
+      <div>
+        <h2 class="titulo-projects">Other Projects</h2>
+        <div class="project-container">
+          <div class="project-ind">
             <div>
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <a href=""></a>
+              <img
+                class="project-image"
+                src="./resources/images/projects-section/1.jpg"
+                alt="Project_Simplify"
+              />
             </div>
+            <div class="text-box">
+              <h3 class="text1">Simplify</h3>
+              <br />
+              <p class="caja-columna">UI Design & App Development</p>
+              <br />
+              <br />
+              <a href="./project_simplify.html">Learn More</a>
+            </div>
+          </div>
+          <div class="project-ind">
+            <div>
+              <img
+                class="project-image"
+                src="./resources/images/projects-section/2.jpg"
+                alt="Project_Simplify"
+              />
+            </div>
+            <div class="text-box">
+              <h3 class="text2">Dashcoin</h3>
+              <br />
+              <p class="caja-columna">Web Development</p>
+              <br />
+              <br />
+              <a href="./project_simplify.html">Learn More</a>
+            </div>
+          </div>
+          <div class="project-ind">
+            <div class="imagen-recortada">
+              <img
+                class="project-image"
+                src="./resources/images/projects-section/3.jpg"
+                alt="Project_Simplify"
+              />
+            </div>
+            <div class="text-box">
+              <h3 class="text3">Vectorify</h3>
+              <br />
+              <p class="caja-columna">User Experience Design</p>
+              <br />
+              <br />
+              <a href="./project_simplify.html">Learn More</a>
+            </div>
+          </div>
         </div>
-        <div class="smallBoxContainer">
-            <div>
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <a href=""></a>
-            </div>
-        </div>
-        <div class="smallBoxContainer">
-            <div>
-                <img src="" alt="">
-                <h4></h4>
-                <p></p>
-                <a href=""></a>
-            </div>
-    </div>
+      </div>
+    </section>
 
     <!--Se repite la sección DO YOU HAVE QUESTIONS-->
-
+    <section id="questions">
+      <h2>Do you have any questions?</h2>
+      <p>Let us help you!</p>
+      <div id="emailBox0">
+        <input
+          id="emailBox"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="               Enter your email"
+        />
+        <button id="butSus">Suscribe</button>
+      </div>
+    </section>
     <footer>
+      <div class="footer-container">
         <div id="address">
-        <img src="./resources/images/logos/circle.svg" alt="Circle logo">
-        <br>
-        <p>2972 Westheimer Rd. Santa Ana,<br>
+          <img src="./resources/images/logos/circle.svg" alt="Circle logo" />
+          <br />
+          <br />
+          <p>
+            2972 Westheimer Rd. Santa Ana,<br />
             Illinois 85486
-        </p>
+          </p>
         </div>
         <table>
-            <tr>
-                <td>Team</td>
-                <td>Services</td>
-                <td>About Us</td>
-            </tr>
-            <tr>
-                <td>Press</td>
-                <td>Projects</td>
-                <td>Privacy Policy</td>
-            </tr>
+          <tr>
+            <td>Team</td>
+            <td>Services</td>
+            <td>About Us</td>
+          </tr>
+          <tr>
+            <td>Press</td>
+            <td>Projects</td>
+            <td>Privacy Policy</td>
+          </tr>
         </table>
+      </div>
     </footer>
-</body>
+    <script src="./resources/js/project.js"></script>
+  </body>
 </html>
